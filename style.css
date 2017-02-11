@@ -1,0 +1,50 @@
+div {
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    transition: all 0.4s
+}
+
+div:hover {
+    transform: scale(1.1);
+}
+
+.left-rail {
+    background: red;
+    float: left;
+    clear: left;
+    transform: translateX(-120%);
+}
+
+.left-rail.active {
+    transform: translateX(0);
+}
+
+.right-rail {
+    background: blue;
+    float: right;
+    clear: right;
+    transform: translateX(120%);
+}
+
+.right-rail.active {
+    transform: translateX(0);
+}
+
+.round-button {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid black;
+    margin: auto;
+    background: gainsboro;
+    transition: all 0.2s;
+}
+
+.round-button:hover {
+    transform: scale(1.2);
+}
+
+#input {
+    margin: auto;
+}
